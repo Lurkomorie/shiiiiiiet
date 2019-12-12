@@ -1,0 +1,126 @@
+@import '~antd/dist/antd.min.css';
+@import "./constants";
+
+
+.cron-builder {
+    display: inline-block;
+    min-height: 200px;
+    background-color: $blue;
+    padding: 15px;
+    color: $darkGrey;
+    font-size: 14px;
+}
+
+.fieldset {
+    border-color: $darkBlue;
+    border-style: solid;
+}
+
+.cron-builder .legend {
+    padding: 0 5px;
+}
+
+.cron-builder .tab {
+    height: 36px;
+    font-weight: bold;
+    color: inherit;
+    border: none;
+    margin: 0.5px;
+    background-image: $button-bg;
+    cursor: pointer;
+    padding: 5px 7px 5px 7px;
+}
+
+.cron-builder .tab:hover:not(.cron-builder .tab:active) {
+    background-image: linear-gradient(to bottom, $white, $grey100);
+}
+
+.cron-builder .active {
+    background-color: $grey;
+    background-image: none;
+    cursor: default;
+}
+
+.cron-builder .preset {
+    min-height: 100px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.cron-builder .input {
+    margin-right: 5px;
+    max-width: 400px;
+}
+
+.cron-builder .row {
+    display: flex;
+}
+
+.cron-builder .row--main {
+    margin-top: 5px;
+}
+
+.cron-builder .row--hours-range {
+    width: 300px;
+    justify-content: center;
+}
+
+.cron-builder .row--inline {
+    display: inline-flex;
+}
+
+.cron-builder .row--items-end {
+    align-items: flex-end;
+}
+
+.cron-builder .label {
+    color: $white;
+    margin-bottom: 3px;
+    display: block;
+}
+
+.cron-builder .link {
+    color: $white;
+    cursor: pointer;
+    right: 0;
+    margin-top: 3px;
+    margin-right: 5px;
+}
+
+.cron-builder .link:hover {
+    text-decoration: underline;
+}
+
+.cron-builder .action {
+    margin: 15px auto;
+    height: 40px;
+    background-image: $button-bg;
+    border: none;
+}
+
+.cron-builder .result {
+    background-color: $black;
+    color: $white;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.cron-builder hr {
+    border: none;
+    border-top: 1px dashed $white;
+}
+
+.cron-builder  .pretty-expression {
+    color: $white;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    max-width: 550px;
+}
+
